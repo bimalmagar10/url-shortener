@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+:root {
+   --color-primary-1:hsl(180, 66%, 49%);
+   --color-primary-2:hsl(257, 27%, 26%);
+   --color-secondary: hsl(0, 87%, 67%);
+   --color-text:hsl(0, 0%, 75%);
+   --default-font:"Poppins",sans-serif;
+   --color-white:#fff;
+   --color-whitesmoke:#f0f1f7;
+   --color-tertiary:hsl(255, 11%, 22%);
+   --color-quinary:hsl(260, 8%, 14%);
+}
+
+@mixin responsive($bk-point){
+   @if $bk-point == laptop-small {
+      @media only screen and (max-width:64em) {@content;}
+   }
+    @if $bk-point == phone {
+      @media only screen and (max-width:31.25em) {@content;}
+   }
+}

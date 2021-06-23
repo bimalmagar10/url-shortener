@@ -1,0 +1,21 @@
+@import "./variables";
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing:inherit;
+}
+html {
+  font-size: 62.5%;
+  @include responsive(laptop-small){
+    font-size:56.25%;
+  }
+  @include responsive(phone){
+    font-size:50%;
+  }
+}
+body {
+  box-sizing: border-box;
+  font-family: var(--default-font);
+}
